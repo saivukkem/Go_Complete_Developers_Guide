@@ -9,4 +9,7 @@ func main() {
 	remainingDeck.print()
 
 	cards.saveToFile("my_cards")
+
+	newDeckOfCards := newDeckFromFile("my_cards")
+	newDeckOfCards.print()
 }
