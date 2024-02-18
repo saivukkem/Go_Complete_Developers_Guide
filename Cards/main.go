@@ -12,4 +12,7 @@ func main() {
 
 	newDeckOfCards := newDeckFromFile("my_cards")
 	newDeckOfCards.print()
+
+	cards.shuffleDeck()
+	cards.print()
 }
