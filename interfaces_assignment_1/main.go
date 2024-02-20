@@ -15,20 +15,20 @@ type triangle struct {
 	base   float64
 }
 
-func (s square) getArea() float64 {
-	return s.sideLength * s.sideLength
-}
-
-func (t triangle) getArea() float64 {
-	return 0.5 * t.base * t.height
-}
-
 func main() {
 	s := square{5.32}
 	t := triangle{4.12, 6.85}
 
 	printArea(s)
 	printArea(t)
+}
+
+func (s square) getArea() float64 {
+	return s.sideLength * s.sideLength
+}
+
+func (t triangle) getArea() float64 {
+	return 0.5 * t.base * t.height
 }
 
 func printArea(s shape) {
