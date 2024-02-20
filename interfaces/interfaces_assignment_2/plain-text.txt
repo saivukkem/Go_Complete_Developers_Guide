@@ -1,0 +1,1 @@
+Hi, my name is Sai. This is a test text file reading from arguments.
